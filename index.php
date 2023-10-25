@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf_8">
+    <link rel="stylesheet"href="css/css1/bootstrap.css">
+    <link rel="stylesheet"href="css/css1/font-awesome.min.css">
+    <link rel="stylesheet"href="css/css1/style.css"> 
+    <title>devskillcheck</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!--bars icon -->
+                <i class="icon fa fa-bars fa-2x"></i>
+                <!--logo-->
+                <div class="col-md-3 col-xs-12">
+                    <div class="logo">
+                        <h2>DevskillCheck</h2>
+                    </div>
+                </div>
+                <!--nav-->
+                <?php include "navbar.php";?>
+                
+                </div>
+            </div>
+        </header>
+        <!--/header-->
+        <section class="sections home text-center">
+           <div class="overlay">
+            <div class="container">
+               <div class="home-content">        
+                 <h3 class="home-title">Welcome to DevskillCheck</h3>
+                <p class="lead home-desc">
+                    Our quiz test web application under the name devskillcheck is mainly aimed at trainees and then job seekers, ensuring a fairly quick and efficient selection of the best CVs.
+                     devskillcheck contains questions on various areas related to web development and programming languages
+                </p>
+            </div>
+            </div>
+           </div>
+        </section>
+        <!--home-->
+        <!--about-->
+        <section class="sections about">
+            <div class="container">
+               <div class="section-header text-center">
+               <h2 class="section-title">About Us</h2>
+               <div class="line"><span></span></div>
+               <p>ETC is a distinct web development company with over 23 years of experience in this field. On behalf of companies, ETC develops personalized digital and technological solutions that align with their marketing and communication strategies. ETC adopts a 100% consistent approach in implementing effective, economical and reliable solutions on behalf of companies. Our agency has a team of experts in web development and an implacable know-how that allows us to provide effective solutions to companies whatever their field of activity:
+                industrial, commercial, consultancy or training organization. Our company constantly gives interns and job seekers the chance to be part of our family, that's why we created this web application to better select those. it is a series of collective questions that allow you to test your knowledge of programming and web development</p>
+               </div>
+            </div>
+        </section>
+        <div class="test"></div>
+        <script src="js/css1/code.jquery.com_jquery-3.3.1.min.js"></script>
+        <script src="js/css1/bootstrap.js"></script>
+        <script src="js/css1/main.js"></script>
+    </body>
+</html>

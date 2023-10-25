@@ -1,0 +1,131 @@
+body{
+    font-family: sans-serif;
+}
+.sections {
+    padding:20px 0;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:(0 ,0, 0, 0.5);
+}
+.section-header.section-title{
+    font-size: 40px;
+}
+.section-header.line{
+    width:150px;
+    background:#ddd;
+    height:4px;
+    margin:auto;
+}
+.section-header .line span{
+    display:block;
+    width:100px;
+    height:4px;
+    background-color: #7cb62f;
+    margin:auto;
+    position:relative;
+    bottom:0.5px;
+}
+.section-header p{
+    width:500px;
+    color:#000;
+    margin:10px auto;
+    line-height: 1.5;
+}
+header{
+    height:auto;
+    padding:10px 0;
+    position:fixed;
+    width:100%;
+    z-index: 999;
+}
+header  i.icon {
+    position:absolute;
+    right:30px;
+    top:34px;
+    z-index:10;
+    display: none;
+}
+header .logo h2{
+    font-size: 35px; 
+    color:blanchedalmond;
+    
+}
+header nav .nav-list{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    font-size: 20px;
+
+}
+header nav .nav-list .list a{
+    display:block;
+    padding:15px 0;
+    margin:9px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color:blanchedalmond;
+} 
+header nav .nav-list .list a:hover{
+    color:#c3195d;
+}
+
+@media(max-width:575px){
+    header{
+        background:#000;
+    }
+    header nav .nav-list{
+        display: none;
+        text-align: center;
+        padding:0;
+    }
+    header .logo{
+        text-align: center;
+    }
+    header  i.icon {
+        display: block;
+    }
+}
+.home{ 
+    height:700px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://img.freepik.com/free-vector/technology-background_52683-7659.jpg?w=1060&t=st=1692866332~exp=1692866932~hmac=517348c5dfab7accd25a70331204d65a00211284eccd0072680409fc453ce0b5');
+    background-position:center ;
+    background-size: cover;
+    position:relative;
+   }
+.home .home-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.home .home-title{
+    color:#fff;
+    font-size: 45px;
+    margin-bottom: 30px;
+    
+}
+.home .home-desc{
+    color:#fff;
+    font-size: 20px;
+}
+@media(max-width:575px){
+    .home .home-title{
+        font-size: 19px;
+    }
+} 
+.sticky{
+    background:#000;
+    color:#fff;
+}
+
+
+
+ .test{
+    margin-bottom: 400px;
+ }

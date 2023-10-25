@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --blue:violet;
+   --dark-blue:rgb(59, 13, 59);
+   --red:violet;
+   --dark-red:rgb(59, 13, 59);
+   --black:#333;
+   --white:#fff;
+   --light-bg:#eee;
+   --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+   width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+.btn,
+.delete-btn{
+   width: 350px;
+   border-radius: 10px;
+   padding:5px 20px;
+   color:var(--white);
+   display:block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+   margin-top:10px;
+}
+
+.btn{
+   background-color: var(--blue);
+}
+
+.btn:hover{
+   background-color: var(--dark-blue);
+}
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+.delete-btn:hover{
+   background-color: var(--dark-red);
+}
+
+div {
+   display: block;
+}
+
+
+
+.container{
+   min-height: 100vh;
+   background: linear-gradient(to bottom,#0f0c29,#302b63,#24243e);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+}
+
+.container .profile{
+   padding:20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   width: 400px;
+   border-radius: 5px;
+}
+
+
+
+
+
+.update-profile{
+   min-height: 100vh;
+   background: linear-gradient(to bottom,#0f0c29,#302b63,#24243e);
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   padding:10px;
+}
+
+.update-profile form{
+   padding:20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   width: 700px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+
+
+.update-profile form .flex{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   gap:15px;
+}
+
+.update-profile form .flex .inputBox{
+   width: 49%;
+}
+
+.update-profile form .flex .inputBox span{
+   text-align: center;
+   display: flex;
+   margin-top: 15px;
+   font-size: 17px;
+   color:var(--black);
+}
+
+.update-profile form .flex .inputBox .box{
+   width: 100%;
+   border-radius: 5px;
+   background-color: var(--light-bg);
+   padding:12px 14px;
+   font-size: 17px;
+   color:var(--black);
+   margin-top: 10px;
+}
+
+@media (max-width:650px){
+   .update-profile form .flex{
+      flex-wrap: wrap;
+      gap:0;
+   }
+   .update-profile form .flex .inputBox{
+      width: 50%;
+   }
+}
+.btn1,
+.delete-btn1{
+   width: 350px;
+   border-radius: 10px;
+   padding:5px 20px;
+   color:var(--white);
+   display:block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+   margin-top:10px;
+}
+
+.btn1{
+   background-color: var(--blue);
+}
+
+.btn1:hover{
+   background-color: var(--dark-blue);
+}
+
+.delete-btn1{
+   background-color: var(--red);
+}
+
+.delete-btn1:hover{
+   background-color: var(--dark-red);
+}
+.les_bouttons{
+   padding-left: 140px;
+}
+
+
+
+   
+

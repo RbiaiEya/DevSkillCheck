@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récupération de données depuis une URL</title>
+</head>
+<body>
+    <div id="data-container"></div>
+
+    <script>
+        // Sélectionnez l'élément HTML où vous souhaitez afficher les données
+        var dataContainer = document.getElementById("data-container");
+
+        // Définissez l'URL à partir de laquelle vous souhaitez récupérer des données
+        var url = "http://localhost/PHP_Projects/DevSkillCheck/server/question/read.php";
+
+        // Utilisez JavaScript pour effectuer une requête AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.status === 200) {
+                // La requête est terminée, et la réponse est reçue avec succès (statut 200 OK)
+                var responseData = xhr.responseText;
+                var jsonData = JSON.parse(responseData);
+                // Affichez les données dans l'élément HTML
+                dataContainer.textContent = JSON.stringify(jsonData.questions, null, 2);
+
+            } else if (xhr.status !== 200) {
+                // Gestion des erreurs si la requête échoue
+                dataContainer.innerHTML = "Erreur lors de la récupération des données.";
+            }
+        };
+
+        // Envoyez la requête
+        xhr.send();
+    </script>
+</body>
+</html>

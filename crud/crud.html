@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="crud.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="question">question</label>
+                        <input type="text" name="question" id="question">
+                    </div>
+                    <div>
+                        <label for="answer">answer</label>
+                        <input type="text" name="answer" id="answer">
+                    </div>
+                    <div>
+                        <label for="option1">option1</label>
+                        <input type="text" name="option1" id="option1">
+                    </div>
+                    <div>
+                        <label for="option2">option2</label>
+                        <input type="text" name="option2" id="option2">
+                    </div>
+                    <div>
+                        <label for="option3">option3</label>
+                        <input type="text" name="option3" id="option3">
+                    </div>
+                    <div>
+                        <label for="option4">option4</label>
+                        <input type="text" name="option4" id="option4">
+                    </div>
+                    
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="question-liste">
+                        <thead>
+                            <tr>
+                                <th>question</th>
+                                <th>answer</th>
+                                <th>option1</th>
+                                <th>option2</th>
+                                <th>option3</th>
+                                <th>option4</th>
+
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./crud.js"></script>
+</body>
+</html>
